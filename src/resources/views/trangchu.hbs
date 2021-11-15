@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kính Mắt Việt</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/logo.css">
+	<link rel="stylesheet" type="text/css" href="css/trangchu.css">
+	<script type="text/javascript" src="js/trangchu.js"></script>
+	
+</head> 
+<body>
+	<div class="container">
+		<div id="id-layer" class="layer">
+				<div id="id-next-left" class="next-left"></div>
+				<div id="id-next-right" class="next-right"></div>
+				<div class="a">
+					<div id="id-a1" class="a1"></div>
+					<div id="id-a2" class="a1"></div>
+					<div id="id-a3" class="a1"></div>
+					<div id="id-a4" class="a1"></div>
+				</div>
+				<div id="id-slide" class="slide">
+					<img  id="id-layer-img1" src="img/k1.png">
+				</div>		
+		</div> 
+		<div class="sanpham">
+			<div class="sp">
+				<p></p>
+				<span class="sp0">SẢN PHẨM</span>
+				<p></p>
+			</div>
+			<a href="sanpham"><img id="id-sp1" class="sp1" src="img/k5.png"></img></a>
+			<a href="sanpham"><img id="id-sp2" class="sp2" src="img/k6.png"></img></a>
+		</div>
+		<div class="sp">
+				<p></p>
+				<span class="sp0">SẢN PHẨM MỚI</span>
+				<p></p>
+		</div>
+		<div class="kinh">
+			<div id="id-k-img" class="k-img">
+				
+				{{#each products}}
+				{{#if description}}
+				<a href="sanpham"><img style="margin-left: 20px;" id="id-img" src="img/{{this.imagePath}}"></a>
+				{{/if}}
+				{{/each}}
+				<div class="gia">
+				{{#each products}}
+				{{#if description}}
+				<p>{{this.nameOptic}}</p>
+				{{/if}}
+				{{/each}}
+					
+				</div>
+			
+					
+				</div>
+			</div>
+			
+		</div>
+		<div class="k-sp">
+				<p></p>
+				<span class="k-sp0">GIỚI THIỆU HỆ THỐNG MẮT VIỆT</span>
+				<p></p>
+		</div>
+		<div class="ht">
+			<div class="ht1">
+				<img class="img-ht" src="img/ht1.png">
+				<div class="vb1-ht">HỆ THỐNG HƠN 30 CỬA HÀNG TOÀN QUỐC</div>
+				<div class="vb2-ht">
+					Chuỗi cửa hàngbán lẻ lớn nhất Việt Nam với hơn 30+ cửa hàng toàn quốc và đang không ngừng mở rộng về quy mô.
+				</div>
+			</div>
+			<div class="ht1">
+				<img class="img-ht" src="img/ht2.png">
+				<div class="vb1-ht">HƠN 30 THƯƠNG HIỆU QUỐC TẾ CHÍNH HÃNG</div>
+				<div class="vb2-ht">
+					Mắt Việt là hệ thống bán lẻ kính mắt chính hãng số 1 tại Việt Nam với hơn 30 thương hiệu nổi tiếng thế giới.
+				</div>
+			</div>
+			<div class="ht1">
+				<img class="img-ht" src="img/ht3.png">
+				<div class="vb1-ht">ĐO MẮT VÀ TƯ VẤN THỊ LỰC TIÊU CHUẨN QUỐC TẾ</div>
+				<div class="vb2-ht">
+					Quy trình 12 bước đo mắt chuẩn quốc tế được xây dựng và thiết kế bởi các chuyên gia hàng đầu quốc tế của tập đoàn Essilor.
+				</div>
+			</div>
+			<div class="ht1">
+				<img class="img-ht" src="img/ht4.png">
+				<div class="vb1-ht">GIẢI PHÁP THỊ LỰC TÂN TIẾN NHẤT THẾ GIỚI</div>
+				<div class="vb2-ht">
+					Đội ngũ kỹ thuật viên khúc xạ được đào tạo bài bản cùng hệ thống máy móc đo mắt hiện đại nhất thế giới hiện tại.
+				</div>
+			</div>
+		</div>
+		<div class="k-sp">
+				<p></p>
+				<span class="k-sp0">THƯƠNG HIỆU NỔI BẬT</span>
+				<p></p>
+		</div>
+		<div class="th">
+			<div class="th1">
+				<img class="img-th1" src="img/p1.png">
+			</div>
+			<div class="th1">
+				<img class="img-th1" src="img/p2.png">
+			</div>
+			<div class="th1">
+				<img class="img-th1" src="img/p3.png">
+			</div>
+			<div class="th1">
+				<img class="img-th1" src="img/p4.png">
+			</div>
+			<div class="th1">
+				<img class="img-th1" src="img/p5.png">
+			</div>
+		</div>
+	</div>
+	<a href="thiluc">
+	<div id="id-domat" class="dk-domat">
+		<img src="img/logo.png">
+		<p>Vũ trọng nghĩa - 096 352 XXXX đã đăng ký đo mắt tại Hồ Chí Minh 1 phút trước</p>
+	</div></a>
+	<script type="text/javascript">
+	
+	</script>
+</body>
+</html>

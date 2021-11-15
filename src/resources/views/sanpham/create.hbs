@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+         form{
+             width: 600px;
+             margin: 10px auto;
+         }
+        .f-login{
+            width: 600px;
+            margin: 10px auto;
+            font-family: sans-serif;
+            font-size: 20px;
+
+        }
+        .form-group{
+            display: flex;
+            margin: 10px;
+        }
+        h2{
+           text-align: center;
+        }
+        .form-control{
+            flex: 1;
+            border: 1px solid gray;
+            box-sizing: border-box;
+            border-radius: 5px ;
+            padding: 10px;
+
+        }
+        label{
+            padding: 10px;
+            min-width: 150px;
+        }
+        button{
+            background-color: rgb(10, 74, 250);
+            color: white;
+            padding: 10px;
+            border: 0.5px solid white;
+            border-radius: 10px;
+            margin-left: 510px;
+            width: 80px;
+            
+        }
+        button:hover{
+            background-color: rgb(24, 0, 245);
+            
+        }
+    </style>
+</head>
+<body>
+    <form  method="POST" action="/admin/store">
+    <div class="form-group">
+        <label for="imagePath">Ảnh 1</label>
+        <input type="file" class="form-control" id="imagePath" placeholder="Ảnh 1" name="imagePath">
+    </div>
+
+    <div class="form-group">
+        <label for="imageHover">Ảnh 2</label>
+        <input type="file" class="form-control" id="imageHover" placeholder="Ảnh 2" name="imageHover">
+    </div>
+
+    <div class="form-group">
+        <label for="nameOptic">Tên kính</label>
+        <input class="form-control" id="nameOptic" placeholder="Tên kính" name="nameOptic">
+    </div>
+
+    <div class="form-group">
+        <label for="price">Giá tiền</label>
+        <input class="form-control" id="price" placeholder="Giá tiền" name="price">
+    </div>
+
+    <div class="form-group">
+        <label for="description">Mô tả</label>
+        <input class="form-control" id="description" placeholder="Mô tả" name="description">
+    </div>
+    <div class="form-group">
+        <label for="tradeMark">Thương hiệu</label>
+        <input class="form-control" id="tradeMark" placeholder="Thương hiệu" name="tradeMark">
+    </div>
+    <div class="form-group">
+        <label for="soluong">soluong</label>
+        <input class="form-control" id="soluong" placeholder="soluong" name="soluong">
+    </div>
+
+    <input class="form-control" id="trangthai" type="hidden" placeholder="trangthai" name="trangthai" value="1">
+    <button type="submit" class="btn btn-primary">Thêm mới</button>
+</form>
+</body>
+</html>
+
+
+

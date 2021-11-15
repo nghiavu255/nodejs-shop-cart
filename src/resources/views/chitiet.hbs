@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thanh toán</title>
+	<link rel="shortcut icon" href="/img/logo.png">
+	<link rel="stylesheet" type="text/css" href="/css/logo.css">
+	<link rel="stylesheet" href="/css/chitiet.css">
+	<style>
+		.chitiet{
+			width: 1000px;
+			margin: 10px auto;
+			display: flex;
+		}
+		.chitiet-anh{
+			flex: 1;
+		}
+		.chitiet-sp{
+			flex: 1;
+		}
+		.product {
+			width: 30%;
+			margin: 30px;
+		}
+
+		.input-group{
+			display: flex;
+		}
+		button{
+			width: 80px;
+			height: 30px;
+			background-color: rgb(133, 119, 0);
+			color: white;
+			border: 1px solid rgb(71, 71, 71);
+			margin: 10px;
+			margin-left: 250px;
+			padding: 5px;
+			cursor: pointer;
+			border-radius: 5px;
+
+		}
+		#myNumber{
+			width: 100px;
+			border: 1px solid rgb(71, 71, 71);
+		}
+		.themgiohang button{
+			border-radius: 5px;
+			padding: 10px;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+		input{
+			border-radius: 5px;
+			border: 1px solid  rgb(133, 119, 0);;
+		}
+		.ct-a{
+			display: flex;
+		}
+		.ct-a img{
+			margin-left: 20px;
+			border: 1px solid gray;
+		}
+        .form-group{
+            display: flex;
+			margin-top: 10px;
+        }
+        
+        .form-control{
+            
+            border: 1px solid gray;
+            box-sizing: border-box;
+            border-radius: 5px ;
+            padding: 10px;
+
+        }
+        label{
+            min-width: 160px;
+			padding-top: 10px;
+        }
+	
+	</style>
+</head>
+<body>
+    {{!-- <img src="{{product.imageHover}}" alt="">
+    <h1>{{product.imageHover}}</h1> --}}
+	<div class="chitiet">
+		<div class="chitiet-anh">
+			
+			<img width="400px" height="400px" src="http://localhost:3000/img/{{product.imagePath}}" alt="">
+			<span class="ct-a">
+				<img width="100px" height="100px" src="http://localhost:3000/img/{{product.imageHover}}" alt="">
+				<img  width="100px" height="100px" src="http://localhost:3000/img/{{product.imagePath}}" alt="">
+				<img  width="100px" height="100px" src="http://localhost:3000/img/{{product.imageHover}}" alt="">
+			</span>
+		</div>
+		<div class="chitiet-sp">
+			<h2>Sản Phẩm : {{product.nameOptic}}</h2>
+			<h3 style="color: gray;">Giá tiền : {{product.price}} VNĐ</h3>
+			<p>Mô tả sản phẩm: {{product.description}}</p>
+			<p>Thương Hiệu: {{product.tradeMark}}</p>
+			<p>Hiện còn :{{product.soluong}} sản phẩm</p>
+			<form method="POST" action="/sanpham/mua/{{product.slug}}">
+				<div class="form-group">	
+				<input class="form-control" type="hidden" id="soluongmua2" placeholder="soluongmua3" value="{{product.price}}" name="price">
+				<input class="form-control" type="hidden" id="soluongmua2" placeholder="soluongmua3" value="{{product.nameOptic}}" name="nameOptic">
+				</div>
+				<div class="form-group">
+				<label for="nguoimua">Họ Và Tên</label>
+				<input class="form-control" id="nguoimua" placeholder="Tên..." name="nguoimua">
+				</div>
+				<div class="form-group">
+				<label for="soluongmua1">Số lượng cần mua</label>
+				<input class="form-control" id="soluongmua2" placeholder="Số lượng..." name="soluongmua">
+				</div>
+				<div class="form-group">
+				<label for="diachi">Địa chỉ giao hàng</label>
+				<input class="form-control" id="diachi" placeholder="Địa chỉ..." name="diachi">
+				</div>
+				<div class="form-group">
+				<label for="sodienthoai">Số điện thoại liên hệ</label>
+				<input class="form-control" id="sodienthoai" placeholder="sđt..." name="sodienthoai">
+				</div>
+				<button type="submit" class="btn btn-primary">mua</button>
+			</form>
+			<div style="color: gray;">Nhân viên giao hàng sẽ gọi điện kiểm tra lại đơn hàng</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

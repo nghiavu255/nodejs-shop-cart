@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+</style>
+</head>
+<body>
+<div>doanh thu thang</div>
+<div>
+    <a href="/admin/doanhthu?thang=1">1</a>
+    <a href="/admin/doanhthu?thang=2">2</a>
+    <a href="/admin/doanhthu?thang=3">3</a>
+    <a href="/admin/doanhthu?thang=4">4</a>
+    <a href="/admin/doanhthu?thang=5">5</a>
+    <a href="/admin/doanhthu?thang=6">6</a>
+    <a href="/admin/doanhthu?thang=7">7</a>
+    <a href="/admin/doanhthu?thang=8">8</a>
+    <a href="/admin/doanhthu?thang=9">9</a>
+    <a href="/admin/doanhthu?thang=10">10</a>
+    <a href="/admin/doanhthu?thang=11">11</a>
+    <a href="/admin/doanhthu?thang=12">12</a>
+</div>
+<table>
+  <tr>
+    <th>sản phẩm</th>
+    <th>Người mua</th>
+    <th>Địa chỉ</th>
+    <th>số lượng mua</th>
+    <th>thoi gian mua</th>
+    <th>Tổng tiền</th>
+  </tr>
+{{#each products}}
+{{#if nguoimua}}
+    <tr>
+    <td>{{this.nameOptic}}</td>
+    <td>{{this.nguoimua}}</td>
+    <td>{{this.diachi}}</td>
+    <td>{{this.soluongmua}}</td>
+    <td>{{this.createdAt}}</td>
+    {{#if price}}<td>{{this.price}}</td>{{/if}}
+  </tr>
+{{/if}}
+{{/each}}
+<tr>
+    <td>Doanh thu tháng {{thang}}</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>{{doanhthu}}</td>
+</tr>
+
+</table>
+</body>
+</html>
+
+

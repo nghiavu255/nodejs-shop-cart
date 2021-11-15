@@ -1,0 +1,68 @@
+/*
+Theme Name: Mắt Việt
+Theme URI: https://matviet.vn/gioi-thieu
+Author: Mắt Việt Theme
+Author URI: https://matviet.vn/
+Description: Multi-Purpose Responsive WooCommerce Theme
+Version: 3
+Text Domain: Mắt Việt
+License: http://themeforest.net/licenses
+License URI: http://themeforest.net/licenses
+*/
+
+
+/***************
+All custom CSS should be added to Flatsome > Advanced > Custom CSS,
+or in the style.css of a Child Theme.
+***************/
+.is-small  {
+    display: none;
+}
+.post-item{    height: 293px !important;    padding-bottom: 20px;}
+@media only screen and (max-width: 400px) {
+    .box-badge .box-text {
+    
+    bottom: 0%;
+    
+}
+}
+@media screen and (min-width: 850px){
+.row-divided>.col+.col:not(.large-12) {
+    border-left: none;
+}}
+@media (max-width: 549px){
+.box-text {
+    text-align: center;
+}}
+.breadcrumbs {
+    
+    font-size: 16px;
+}
+.breadcrumbs .divider {
+        margin-left: 0px;
+    margin-right: 0px;
+}
+.badge-circle .badge-inner {
+    border-radius: 999px;    
+	padding-left: 20px;
+    padding-right: 20px;
+
+}
+td {
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+td:first-child {
+    padding: .5em;
+}
+.inf_infusionsoft .inf_infusionsoft_inline_form .inf_infusionsoft_form_container {
+    z-index: 10;
+}
+.back-to-top {bottom: 180px !important;border-radius: 3px !important;}
+.cat-item-1210 {display:none !important;}
+.timcuahanghover {color: #045d9b;padding-left: 7px;padding-right: 7px;}
+#menu-item-13342 a:hover{    background-color: #e5b422;color: #fff !important;}
+#menu-item-13342 {margin: 0 0 !important;}
+.timcuahanghover a:hover{color: #fff !important;}
+/* Tu trang kinhdatrong.matviet.vn (TODO: use about-us-2 class) */

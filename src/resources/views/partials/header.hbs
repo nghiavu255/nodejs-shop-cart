@@ -1,0 +1,102 @@
+	
+    <div id="id-logo" class="logo">
+		<a href="/"><img class="matviet" src="/img/logo.png"></a>
+		<div class="menu">
+			<ul class="ul1">
+				<li class="li1"><a href="/thuonghieu">Thương hiệu</a>
+					<ul class="ul2 ul2-thuonghieu">
+						<li class="li2">Ray Ban</li>
+						<li class="li2">Bolon</li>
+						<li class="li2">Molsion</li>
+						<li class="li2">Vogue</li>
+						<li class="li2">Flyer</li>
+						<li class="li2">Giorgio Ferri</li>
+						<li class="li2">Guy Laroche</li>
+					</ul>
+				</li>
+				<li class="li1"><a href="/trongkinh">Tròng kính</a>
+					<ul class="ul2 ul2-trongkinh">
+						<li class="li2">Đơn tròng Crizal</li>
+						<li class="li2">Đơn tròng Essilor</li>
+						<li class="li2">Đơn tròng Varilux</li>
+						<li class="li2">Đơn tròng Transitions</li>
+					</ul>
+				</li>
+				<li class="li1"><a href="/thiluc">Thị lực</a>
+					<ul class="ul2 ul2-thiluc">
+						<li class="li2">Tiêu chuẩn đo mắt</li>
+						<li class="li2">Đăng ký đo mắt</li>
+					</ul>
+				</li>
+				<li class="li1"><a href="/sanpham">Gọng kính</a></li>
+				<li class="li1"><a href="/thanhtoan">Hướng dẫn mua hàng</a></li>
+				<li class="li1"><a href="/gioithieu">Giới thiệu</a></li>
+				{{#if cart}}
+				<li class="li1"><a href="/sanpham/giohang">Giỏ hàng</a></li>
+				<li style="margin-top: 25px;"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="32" height="32" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+					<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+					<circle cx="6" cy="19" r="2" />
+					<circle cx="17" cy="19" r="2" />
+					<path d="M17 17h-11v-14h-2" />
+					<path d="M6 5l14 1l-1 7h-13" />
+					</svg>({{cart}})
+				</li>{{/if}}
+				
+				{{#if tk}}
+					<li  class="li1">Xin chào:{{tk}}
+					
+					{{#if admin}}
+							<ul class="ul2 ul2-thuonghieu">
+						<li class="li2"><a style="color: aliceblue;" href="/admin/doanhthu">Thống kê doanh thu</a></li>
+						<li class="li2"><a style="color: aliceblue;" href="/admin/thongke">Thống kê sản phẩm</a></li>
+						<li class="li2"><a style="color: aliceblue;" href="/admin/create">Thêm sản phẩm mới</a></li>
+					</ul>
+						{{/if}}
+			
+					</li>
+					<li  class="li1"><a onclick="deleteAllCookies()" href="/login">đăng xuất</a></li>
+					{{/if}}
+					{{#unless tk}}
+					<li  class="li1"><a href="/login">Đăng nhập?</a></li>
+					<li  class="li1"><a href="/dangky">Đăng ký</a></li>
+					{{/unless}}
+			</ul>
+			
+
+		</div>
+		{{!-- {{#if admin}}
+		<ul class="ul1">
+		<li class="li1"><a href="/user">{{tk}}</a>
+					<ul class="ul2 ul2-thuonghieu">
+						<li class="li2"><a style="color: aliceblue;" href="/admin/doanhthu">Thống kê doanh thu</a></li>
+						<li class="li2"><a style="color: aliceblue;" href="/admin/thongke">Thống kê sản phẩm</a></li>
+						<li class="li2"><a style="color: aliceblue;" href="/admin/create">Thêm sản phẩm mới</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="ul1">
+				<li class="li1"><a href="/login">Đăng xuất</a>
+			</ul>
+			{{/if}} --}}
+		
+		
+	</div>
+	<div class="tim-cua-hang">
+		<img src="/img/tim.png">
+	</div>
+	<div class="do-mat">
+		<p class="mat1">Đo mắt miễn phí</p>
+		<img src="/img/do.png">
+	</div>
+	<script type="text/javascript">
+		function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+}
+	</script>

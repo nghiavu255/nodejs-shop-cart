@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sản phẩm</title>
+	<link rel="shortcut icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="/css/logo.css">
+	<link rel="stylesheet" type="text/css" href="/css/sanpham.css">
+	<style>
+		button{
+			border: none;
+			background-color: rgb(175, 161, 96);
+			font-family: sans-serif;
+			font-size: 15px;
+		}
+		.p1{
+			font-size: 22px;
+			font-weight: bolder;
+			text-transform: uppercase;
+		}
+		.p2{
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<div class="lay">
+			<div class="gia">
+				<div class="mn mn-vt0">
+				<ul>SẢN PHẨM MỚI
+					<li>Kính Mát Armani Exchange</li>
+					<li>Kính Mát Bolon</li>
+					<li>Kính Mát Burberry</li>
+					<li>Kính Mát Michael Kors</li>
+					<li>Kính Mát Oakley</li>
+					<li>Kính Mát Prada</li>
+				</ul>
+			</div>
+			</div>
+			<img class="lay1" src="/img/k12.jpg">
+		</div>
+		<div class="sanpham">
+			<div class="mn mn-vt1">
+				<ul>CÁC CHUYÊN MỤC
+					<li>Chăm sóc mắt</li>
+					<li>Chương Trình Ưu Đãi</li>
+					<li>Giải pháp thị lực</li>
+					<li>Hình Ảnh Hệ Thống Cửa Hàng</li>
+					<li>Những tình trạng của mắt</li>
+					<li>Thương hiệu Tròng Kính</li>
+					<li>Tìm Hiểu Về Thị Lực</li>
+					<li>Tin Tức Cập Nhật</li>
+				</ul>
+			</div>
+			{{!-- <form action="/sanpham" method="GET">
+				<input type="text" name="q">
+			<button>tim kiem</button>
+			</form> --}}
+			<h1>{{sessions.id}}</h1>
+			{{#each products}}
+			{{#if description}}
+			<a href="/sanpham/{{this.slug}}">
+				<div class="sp1">
+				<img class="pic1" src="http://localhost:3000/img/{{this.imagePath}}">
+				<img class="pic2" src="http://localhost:3000/img/{{this.imageHover}}">
+				<p class="p1">{{this.nameOptic}}</p>
+				<p class="p2">GIÁ CHỈ : {{this.price}} VNĐ</p>
+				<div class="op">
+					<div class="op1"><a href="/sanpham/{{this.slug}}">mua nhanh</a></div>
+					<div class="op0"></div>
+					<div class="op1"><form method="POST" action="/sanpham/{{this.slug}}">
+					<div class="form-group">	
+					<input class="form-control" type="hidden" id="soluongmua2" placeholder="soluongmua3" value="{{this.price}}" name="price">
+					<input class="form-control" type="hidden" id="soluongmua2" placeholder="soluongmua3" value="{{this.nameOptic}}" name="nameOptic">
+					</div>
+						<button>them gio hang</button>
+					</form></div>
+					
+					
+				</div>
+			</div>
+			</a>
+			{{/if}}
+
+			{{/each}}
+			{{#each users}}
+			<h1>{{this.user}}</h1>
+			{{/each}}
+			<div class="chuyentrang">
+				<div class="n1"><a href="/sanpham?page=1">1</a></div>
+				<div class="n1"><a href="/sanpham?page=2">2</a></div>
+				<div class="n1"><a href="/sanpham?page=3">3</a></div>
+				<div class="n1"><a href="/sanpham?page=4">4</a></div>
+				<div class="n1"><a href="/sanpham?page=5">5</a></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

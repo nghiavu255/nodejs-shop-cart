@@ -1,0 +1,182 @@
+.lay{
+	width: 1200px;
+	height: 400px;
+	margin: 0px auto;
+	display: flex;
+}
+
+.gia{
+
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+.lay1{
+	width: 800px;
+	height: 300px;
+}
+
+
+
+.sanpham{
+	width: 1100px;
+	height: 1100px;
+	margin-left: 100px;
+	position: relative;
+}
+.sp1{
+	float: left;
+	margin-left: 40px;
+	margin-bottom: 50px;
+	width: 300px;
+
+	height: 420px;
+	position: relative;
+	border: 1px solid gray;
+	z-index: 1;
+}
+.pic1{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 280px;
+	height: 280px;
+	opacity: 1;
+	z-index: 4;
+
+}
+.pic1:hover{
+	opacity: 0;
+}
+.pic2{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 280px;
+	height: 280px;
+	opacity: 1;
+	z-index: 1;
+
+}
+.sp1 .p1{
+	margin-top: 300px;
+	text-align: center;
+}
+.sp1 .p2{
+	text-align: center;
+	color: gray;
+	font-weight: bolder;
+}
+.cl:hover .cl1{
+	border:none;
+}
+.cl2:hover {
+	border:1px solid gray;
+}
+.cl{
+	width: 100px;
+	height: 30px;
+	margin: 10px auto;
+	display: flex;
+}
+.cl1{
+	border:1px solid gray;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #0bb7e49e;
+	margin-left: 20px;
+	cursor: pointer;
+	
+}
+.cl2{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #ff000099;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.sp1:hover .op{
+	opacity: 1;
+}
+.op{
+	width: 301px;
+	height: 40px;
+	color: white;
+	background-color: rgb(175, 161, 96);display: flex;
+	opacity: 0;
+}
+.op1{
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+.op0{
+	width: 2px;
+	height: 40px;
+	border-right: 2px solid white;
+}
+
+.mn-vt1{
+	left: 950px;
+	top: 0px;
+}
+.mn-vt0{
+	left: 0px;
+	top: 0px;
+}
+.mn{
+	position: absolute;
+	width: 300px;
+	height: 1000px;
+}
+.mn ul{
+	margin-left: 50px;
+	list-style: none;
+	font-size: 20px;
+	font-weight: bolder;
+	color: gray;
+	margin-bottom: 20px;
+}
+.mn ul li{
+	margin-top: 20px;
+	width: 260px;
+	height: 25px;
+	font-size: 15px;
+	cursor: pointer;
+	color: #5f5fac;
+	border-bottom: 1px #c1c1c1 solid;
+}
+.mn ul li:hover{
+	color: #1b1b66;
+}
+.chuyentrang{
+	width: 325px;
+	height: 30px;
+	position: absolute;
+	bottom: 0px;
+	left: 300px;
+	display: flex;
+}
+.n1{
+	text-align: center;
+	padding-top: 10px;
+	margin-right: 10px;
+	width: 30px; 
+	height: 16px;
+	border-radius: 50%;
+	border:2px solid black;
+
+	font-size: 10px;
+}
+.n1:active{
+	background-color: #f3bd29;
+}
+.n1:hover{
+	color: white;
+	background-color: #f3bd29;
+	border-color: #f3bd29;
+}

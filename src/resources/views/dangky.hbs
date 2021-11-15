@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng nhập</title>
+	<link rel="stylesheet" type="text/css" href="/css/dangky.css">
+	<style>
+		body{
+		margin: 0px;
+		font-family: sans-serif;
+		background-image: url('/img/layer3.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	
+	<form method="POST" action="/login">
+		<div class="bao"><div class="logo1"><img class="logo-img" src="img/logo.png"></div></div>
+		<h2>Đăng Nhập</h2>
+		{{#if error}}
+			<div class="dangky1">{{error}}</div>
+		{{/if}}
+		<input id="id-value1" class="f-input" type="text" placeholder="Username" value="Tài khoản" name="user">
+		<input id="id-value2" class="f-input" type="password" placeholder="Password" value="Giahuyoptic" name="passWord">
+		<div class="nho">
+			<div id="id-switch" class="switch">
+				<div id="id-click1" class="click1"></div>
+				<div id="id-click2" class="click2"></div>
+			</div>
+			<div class="rmb">Nhớ mật khẩu</div>
+		</div>
+		<button id="id-dangnhap" class="btn-dangnhap" type="submit">Đăng Nhập</button>
+		<div class="dangky1">Bạn chưa có tài khoản <a href="dangky">Đăng Ký</a></div>
+		
+	</form>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#id-click1').click(()=>{
+				$('#id-click1').hide();
+				$('#id-click2').show();
+				$('#id-switch').css("background-color","#ecdd55e8");
+			})
+			$('#id-click2').click(()=>{
+				$('#id-click2').hide();
+				$('#id-click1').show();
+				$('#id-switch').css("background-color","#c6c6c6");
+			})
+			$('#id-value1').click(()=>{
+				$('#id-value1').attr("value","");
+			})
+			$('#id-value2').click(()=>{
+				$('#id-value2').attr("value","");
+			})
+		})
+	</script>
+</body>
+</html>

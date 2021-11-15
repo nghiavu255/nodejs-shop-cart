@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+</style>
+</head>
+<body>
+  <h1>THỐNG KÊ SẢN PHẨM</h1>
+<table>
+  <tr>
+    <th>sản phẩm</th>
+    <th>ảnh</th>
+    <th>giá bán</th>
+    <th>số lượng</th>
+    <th>ngày thêm sản phẩm</th>
+  </tr>
+{{#each products}}
+ {{#if description }}
+  <tr>
+    <td>{{this.nameOptic}} </td>
+    <td><img width="50px" height="50px" src="http://localhost:3000/img/{{this.imageHover}}" alt=""></td>
+    <td>{{this.price}}</td>
+    <td>{{this.soluong}}</td>
+    <td>{{this.createdAt}}</td>
+  </tr>
+ {{/if}}
+{{/each}}
+</table>
+</body>
+</html>
+
+

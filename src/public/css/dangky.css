@@ -1,0 +1,122 @@
+
+form{
+	margin: 10px auto 300px auto;
+	border-radius: 2rem;
+	box-shadow: 0px 0px 12px 4px #ecdd55e8;
+	position: relative;
+	color: white;
+	width: 260px;
+	
+	background-color: #333131e8;
+	padding: 2rem;
+}
+.bao{
+	width: 73px;
+	height: 73px;
+	top:0px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	background-color: black;
+	border-radius: 50%;
+}
+.logo1{
+	margin-top: 4px;
+	margin-left: 4px;
+	width: 65px;
+	height: 65px;
+	background-color: #f3bd29;
+	border-radius: 50%;
+
+
+}
+.logo-img{
+	width: 65px;
+	height: 65px;
+	background-size: 65px 50px;
+	background-repeat: no-repeat;
+}
+form h2{
+	user-select: none;
+	text-align: center;
+	margin-top: 3rem;
+	font-weight: 400;
+}
+.f-input{
+	display: block;
+	margin: 1.5rem auto;
+	outline: none;
+	border-radius: 2rem;
+	border: none;
+	background-color:#5d5959;
+	color: white;
+	height: 25px;
+	width: 190px;
+	padding-left: 10px;
+}
+form button{
+	border:none;
+	padding: 7px;
+	border-radius: 0.7rem;
+	cursor: pointer;
+}
+.nho{
+	font-size: 12px;
+	margin-left: 2px;
+	margin-top: 10px;
+	display: flex;
+}
+.btn-dangnhap{
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.btn-dangnhap:hover{
+	background-color: #ecdd55e8;
+}
+.dangky1{
+	margin:10px auto 0px auto;
+	color: #ecdd55e8;
+}
+.rmb{
+	margin-left: 20px;
+	margin-top: 5px;
+	font-size: 15px;
+	color: gray;
+}
+.switch{
+	position: relative;
+	width: 40px;
+	height: 22px;
+	background-color: #c6c6c6;
+	border-radius: 20px;
+	border: 1px solid gray;
+}
+.click1{
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin-top: 0.5px;
+	margin-left: 0.5px;
+	background-color: white;
+	border: 0.5px gray solid;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.click2{
+	margin-top: 0.5px;
+	margin-right: 1px;
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	right:0px;
+	top: 0px;
+	background-color: white;
+	display: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#id-trangchu{
+	text-decoration: none;
+}

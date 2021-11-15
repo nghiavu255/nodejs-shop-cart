@@ -1,0 +1,91 @@
+.content{
+	width: 1000px;
+	height: 350px;
+	margin: 10px auto 10px auto;
+	overflow: hidden;
+	position: relative;
+}
+.slide{
+	position: relative;
+	width: 10000px;
+	height: 350px;
+}
+.vitri{
+	position: absolute;
+	width: 3200px;
+	height: 350px;
+	left: 0px;
+	top: 0px;
+}
+.vitri img{
+	float: left;
+	width: 1000px;
+	height: 350px;
+}
+.active{
+	opacity: 0.4;
+}
+.next{
+	width: 50px;
+	height: 350px;	background-color: #ffffffc2;
+}
+.next:hover{
+	background-color: #ffffffde;
+}
+.next img{
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 160px;
+
+}
+.left{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.right{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.thuonghieu{
+	width: 1200px;
+	margin: 0px auto;
+	height: 500px;
+	position: relative;
+	display: flex;
+}
+.all{
+	position: absolute;
+	width: 600px;
+	height: 40px;
+	left: 300px;
+	top: 20px;
+	display: flex;
+}
+.all span{
+	font-size: 17px;
+	padding:10px;
+	margin-left: 40px;
+	text-align: center;
+}
+.all span:first-child{
+	color: #e7b423;
+	border:1px solid #e7b423;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.all span:hover{
+	color: #e7b423;
+	border:2px solid #e7b423;
+	border-radius: 10px;	
+}
+.thuonghieu ul{
+	margin-top: 70px;
+	margin-right: 120px;
+}
+.thuonghieu ul li{
+	padding: 10px;
+	cursor: pointer;
+}
